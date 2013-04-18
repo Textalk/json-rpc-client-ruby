@@ -7,7 +7,7 @@ called within a (non-root) fiber.
 
 Usage example for asynchronous behaviour:
 ```Ruby
-wallet      = JsonRpcClient.new('https://wallet.my:8332/')
+wallet      = JsonRpcClient.new('https://localhost:8332/') # Local bitcoin wallet
 balance_rpc = wallet.getbalance()
 balance_rpc.callback do |result|
   puts result # => 90.12345678
@@ -53,7 +53,7 @@ override the default logger for that instance.
 ```Ruby
 require 'logger'
 JsonRpcClient.default_logger = Logger.new($STDOUT)
-wallet = new JsonRpcClient('https://wallet.my:8332/')
+wallet = JsonRpcClient.new('https://localhost:8332/') # Local bitcoin wallet
 wallet.logger = MyCustomLogger.new()
 ```
 

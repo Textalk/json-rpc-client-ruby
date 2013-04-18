@@ -5,7 +5,7 @@ require 'addressable/uri'
 # This implements a client for JSON-RPC (version 2) calls.
 #
 # @example Asynchronous
-#   wallet      = JsonRpcClient.new('https://wallet.my:8332/')
+#   wallet      = JsonRpcClient.new('https://localhost:8332/') # Local bitcoin wallet
 #   balance_rpc = wallet.getbalance()
 #   balance_rpc.callback do |result|
 #     puts result # => 90.12345678
