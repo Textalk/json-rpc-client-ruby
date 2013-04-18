@@ -2,10 +2,10 @@ require 'rake'
 
 Gem::Specification.new do |s|
   s.name                  = 'json-rpc-client'
-  s.homepage              = 'https://github.com/Textalk/ruby.jsonrpcclient'
+  s.homepage              = 'https://github.com/Textalk/json-rpc-client-ruby'
   s.license               = 'MIT'
   s.authors               = ["Fredrik Liljegren", "Lars Olsson", "Denis Dervisevic"]
-  s.version               = '0.1.0'
+  s.version               = '0.1.1'
   s.date                  = '2013-04-18'
   s.summary               = "JSON-RPC 2.0 client."
   s.description           = "Asynchronous (EventMachine) JSON-RPC 2.0 over HTTP client."
