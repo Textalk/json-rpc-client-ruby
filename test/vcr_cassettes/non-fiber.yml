@@ -1,0 +1,20 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://shop.textalk.se/backend/jsonrpc/Article/12565604
+    body:
+      encoding: UTF-8
+      string: '{"method":"get","params":[],"id":"jsonrpc","jsonrpc":"2.0"}'
+    headers: {}
+  response:
+    status:
+      code: 0
+      message:
+    headers: {}
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Thu, 18 Apr 2013 09:33:11 GMT
+recorded_with: VCR 2.4.0
