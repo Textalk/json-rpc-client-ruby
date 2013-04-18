@@ -4,7 +4,9 @@ require 'logger'
 
 SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
 SimpleCov.command_name 'bacon'
-SimpleCov.start
+SimpleCov.start do
+  add_filter '/vendor/'
+end
 
 # A small custom logger for the tests, all log messages are saved to an array.
 class CustomLogger < Logger
