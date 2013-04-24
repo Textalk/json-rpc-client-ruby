@@ -1,8 +1,12 @@
 Asynchronous (EventMachine) JSON-RPC 2.0 client
 ===============================================
 
+[![Gem Version](https://badge.fury.io/rb/json-rpc-client.png)]
+(http://badge.fury.io/rb/json-rpc-client)
 [![Build Status](https://travis-ci.org/Textalk/json-rpc-client-ruby.png?branch=master)]
 (https://travis-ci.org/Textalk/json-rpc-client-ruby)
+[![Code Climate](https://codeclimate.com/github/Textalk/json-rpc-client-ruby.png)]
+(https://codeclimate.com/github/Textalk/json-rpc-client-ruby)
 
 This gem is a client implementation for JSON-RPC 2.0. It uses EventMachine to
 enable asynchronous communication with a JSON-RPC server. It can be used synchronously if
