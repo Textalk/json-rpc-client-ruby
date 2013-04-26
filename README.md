@@ -12,8 +12,21 @@ This gem is a client implementation for JSON-RPC 2.0. It uses EventMachine to
 enable asynchronous communication with a JSON-RPC server. It can be used synchronously if
 called within a (non-root) fiber.
 
-Usage example for asynchronous behaviour:
+Usage
+-----
+
+Full documentation can be found at [rubydoc]
+(http://rubydoc.info/gems/json-rpc-client/frames).
+
+JsonRpcClient requires Ruby 1.9.2 or later. To install, type:
+
+```bash
+gem install json-rpc-client
+```
+
+Asynchronous behaviour:
 ```Ruby
+require 'json-rpc-client'
 wallet      = JsonRpcClient.new('https://localhost:8332/') # Local bitcoin wallet
 balance_rpc = wallet.getbalance()
 balance_rpc.callback do |result|
@@ -26,7 +39,7 @@ balance_rpc.errback do |error|
 end
 ```
 
-Usage example for synchronous behaviour:
+Synchronous behaviour:
 ```Ruby
 require 'eventmachine'
 require 'json-rpc-client'
