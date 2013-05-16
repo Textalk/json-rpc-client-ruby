@@ -1,6 +1,9 @@
 require 'simplecov'
 require 'simplecov-rcov'
 require 'logger'
+require 'coveralls'
+
+Coveralls.wear!
 
 SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
 SimpleCov.command_name 'bacon'
