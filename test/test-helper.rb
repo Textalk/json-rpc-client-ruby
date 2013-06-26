@@ -5,7 +5,10 @@ require 'coveralls'
 
 Coveralls.wear!
 
-SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::RcovFormatter,
+  Coveralls::SimpleCov::Formatter
+]
 SimpleCov.command_name 'bacon'
 SimpleCov.start do
   add_filter '/vendor/'
