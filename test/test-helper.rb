@@ -12,6 +12,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
 SimpleCov.command_name 'bacon'
 SimpleCov.start do
   add_filter '/vendor/'
+  add_filter '/test/'
 end
 
 # A small custom logger for the tests, all log messages are saved to an array.
